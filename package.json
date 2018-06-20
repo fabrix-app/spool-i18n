@@ -15,10 +15,7 @@
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
-    "dist/index.js",
-    "dist/index.d.ts",
-    "dist/lib",
-    "dist/config"
+    "dist"
   ],
   "pre-commit": [
     "test"
@@ -35,6 +32,7 @@
     "internationalzation",
     "interpreter"
   ],
+  "homepage": "https://fabrix.app",
   "author": "Fabrix-app Team <hello@fabrix.app>",
   "contributors": [
     {
@@ -43,7 +41,6 @@
       "url": "https://github.com/scott-wyatt"
     }
   ],
-  "license": "MIT",
   "dependencies": {
     "i18next": "^11.3.3",
     "lodash": "^4.17.10"
@@ -67,5 +64,9 @@
   },
   "engines": {
     "node": ">= 7.6.0"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fabrix-app/spool-tapestries/issues"
   }
 }
