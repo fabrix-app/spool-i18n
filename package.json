@@ -1,0 +1,71 @@
+{
+  "name": "@fabrix/spool-i18n",
+  "version": "1.0.0-alpha.4",
+  "description": "Spool - i18n for Fabrix",
+  "scripts": {
+    "build": "tsc -p ./lib/tsconfig.release.json",
+    "lint": "tslint -p ./lib",
+    "watch": "tsc -w -p ./lib/tsconfig.release.json",
+    "test": "npm run clean && npm run lint && npm run build && nyc mocha",
+    "prepublishOnly": "npm run compile",
+    "compile": "npm run clean && npm run build",
+    "clean": "rm -rf dist",
+    "ci": "cd .. && ci"
+  },
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist/index.js",
+    "dist/index.d.ts",
+    "dist/lib",
+    "dist/config"
+  ],
+  "pre-commit": [
+    "test"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabrix-app/spool-i18n.git"
+  },
+  "keywords": [
+    "fabrix",
+    "fabrix-app",
+    "i18n",
+    "spool",
+    "internationalzation",
+    "interpreter"
+  ],
+  "author": "Fabrix-app Team <hello@fabrix.app>",
+  "contributors": [
+    {
+      "name": "Scott Wyatt",
+      "email": "scottwyatt86@gmail.com",
+      "url": "https://github.com/scott-wyatt"
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "i18next": "^11.3.3",
+    "lodash": "^4.17.10"
+  },
+  "devDependencies": {
+    "@fabrix/fabrix": "^1.0.0-alpha.5",
+    "@fabrix/lint": "^1.0.0-alpha.3",
+    "@types/lodash": "^4.14.109",
+    "@types/node": "~10.3.2",
+    "mocha": "^5",
+    "nyc": "^12.0.2",
+    "smokesignals": "^3",
+    "tslib": "~1.9.0",
+    "tslint": "~5.10.0",
+    "tslint-microsoft-contrib": "~5.0.3",
+    "tsutils": "~2.27.1",
+    "typescript": "~2.8.1"
+  },
+  "peerDependencies": {
+    "@fabrix/fabrix": "^1.0.0-alpha.5"
+  },
+  "engines": {
+    "node": ">= 7.6.0"
+  }
+}
