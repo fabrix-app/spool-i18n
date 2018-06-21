@@ -1,6 +1,6 @@
 {
   "name": "@fabrix/spool-i18n",
-  "version": "1.0.0-alpha.4",
+  "version": "1.0.0-alpha.5",
   "description": "Spool - i18n for Fabrix",
   "scripts": {
     "build": "tsc -p ./lib/tsconfig.release.json",
