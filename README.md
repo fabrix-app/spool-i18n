@@ -37,8 +37,8 @@ information on how our projects are organized and how to get started.
 ## License
 [MIT](https://github.com/fabrix-app/spool-i18n/blob/master/LICENSE)
 
-[npm-image]: https://img.shields.io/npm/v/spool-i18n.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/spool-i18n
+[npm-image]: https://img.shields.io/npm/v/@fabrix/spool-i18n.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/@fabrix/spool-i18n
 [ci-image]: https://img.shields.io/travis/fabrix-app/spool-i18n/master.svg?style=flat-square
 [ci-url]: https://travis-ci.org/fabrix-app/spool-i18n
 [daviddm-image]: http://img.shields.io/david/fabrix-app/spool-i18n.svg?style=flat-square
