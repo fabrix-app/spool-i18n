@@ -1,9 +1,12 @@
 /**
- * REPL Spool Configuration
+ * Spool Configuration
+ *
+ * This manifest declares the application resources which are provided and/or
+ * modified by this spool.
+ * @see {@link https://fabrix.app/doc/spool/config
  */
 export const spool = {
-  // default encoding of http request response
-  httpEncoding: 'utf8',
-
-  historyFileName: '.node_repl_history'
+  provides: {
+    config: ['i18n']
+  }
 }
