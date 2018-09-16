@@ -4,11 +4,11 @@ import * as config from './config/index'
 import * as pkg from '../package.json'
 
 /**
- * @class REPL
+ * @class I18n
  *
- * Provide an interactive Javascript shell for Fabrix applications
+ * Provide i18n to a Fabrix Applicatoin
  *
- * @see {@link https://nodejs.org/api/repl.html#repl_repl}
+ * @see {@link https://www.npmjs.com/package/i18n}
  */
 export class I18nSpool extends ExtensionSpool {
   private _translate
@@ -70,6 +70,10 @@ export class I18nSpool extends ExtensionSpool {
   }
 
   async unload() {
+
+  }
+
+  async sanity() {
 
   }
 }
