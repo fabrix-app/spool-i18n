@@ -3,8 +3,8 @@ const _ = require('lodash')
 const FabrixApp = require('@fabrix/fabrix').FabrixApp
 
 before(() => {
-  global.app = new FabrixApp(require('./app'))
-  return global.app.start()
+  global.app = new FabrixApp(require('./fixtures/app'))
+  return global.app.start().catch(err => app.stop)
 })
 
 describe('Fabrix App', () => {

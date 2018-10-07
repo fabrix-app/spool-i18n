@@ -34,7 +34,7 @@ module.exports = {
     },
     main: {
       spools: [
-        require('../dist').I18nSpool
+        require('../../dist').I18nSpool
       ],
       paths: {
         temp: path.resolve(__dirname)
