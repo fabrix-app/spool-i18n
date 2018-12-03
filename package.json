@@ -1,6 +1,6 @@
 {
   "name": "@fabrix/spool-i18n",
-  "version": "1.5.1",
+  "version": "1.6.0",
   "description": "Spool - i18n for Fabrix",
   "scripts": {
     "build": "tsc -p ./lib/tsconfig.release.json",
@@ -47,7 +47,7 @@
     "lodash": "^4.17.11"
   },
   "devDependencies": {
-    "@fabrix/fabrix": "^1.5.9",
+    "@fabrix/fabrix": "^1.6.0",
     "@fabrix/lint": "^1.0.0-alpha.3",
     "@types/lodash": "^4.14.109",
     "@types/node": "~10.3.2",
@@ -61,7 +61,7 @@
     "typescript": "~2.8.1"
   },
   "peerDependencies": {
-    "@fabrix/fabrix": "^1.5.9"
+    "@fabrix/fabrix": "^1.6.0"
   },
   "engines": {
     "node": ">= 7.6.0"
