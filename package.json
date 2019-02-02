@@ -43,7 +43,7 @@
     }
   ],
   "dependencies": {
-    "i18next": "^11.9.0",
+    "i18next": "^14.0.1",
     "lodash": "^4.17.11"
   },
   "devDependencies": {
@@ -52,7 +52,7 @@
     "@types/lodash": "^4.14.109",
     "@types/node": "~10.3.2",
     "mocha": "^5",
-    "nyc": "^12.0.2",
+    "nyc": "^13.1.0",
     "smokesignals": "^3",
     "tslib": "~1.9.0",
     "tslint": "~5.10.0",

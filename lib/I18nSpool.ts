@@ -1,5 +1,5 @@
 import { ExtensionSpool } from '@fabrix/fabrix/dist/common/spools/extension'
-import * as i18next from 'i18next'
+import i18next from 'i18next'
 import * as config from './config/index'
 import * as pkg from '../package.json'
 
@@ -36,16 +36,11 @@ export class I18nSpool extends ExtensionSpool {
   }
 
   async initI18n(i18nConfig) {
-    return new Promise((resolve, reject) => {
-      i18next.init(i18nConfig, (err, t) => {
-        if (err) {
-          this.log.error('i18n failed to load:', err)
-          reject(err)
-        }
+    return i18next.init(i18nConfig)
+      .then(t => {
         this._translate = t
-        resolve()
+        return this._translate = t
       })
-    })
   }
 
   get __ () {
